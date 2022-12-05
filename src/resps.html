@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <style>
+    .md-input-main {
+      @apply font-sans text-xl w-full;
+      width: 100%;
+      font-size: 1.25rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    .md-input-box {
+      @apply relative;
+      position: relative;
+    }
+    .md-input {
+      @apply w-full;
+      width: 100%;
+      outline: none;
+      height: 50px;
+    }
+    .md-label {
+      @apply absolute pointer-events-none block;
+      display: block;
+      position: absolute;
+      pointer-events: none;
+      transform-origin: top left;
+      transform: translate(0, -40px) scale(1);
+      transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+        transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    }
+    .md-label-focus {
+      @apply text-blue;
+      color: #3182ce;
+      transform: translate(0, -65px) scale(0.75);
+      transform-origin: top left;
+    }
+    .md-input-underline {
+      border-bottom: 1px solid #718096;
+    }
+    .md-input-underline:after {
+      @apply absolute left-0 right-0 pointer-events-none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      bottom: -0.05rem;
+      content: "";
+      transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+      transform: scaleX(0);
+      border-bottom: 2px solid #805ad5;
+    }
+    .md-input:focus ~ .md-input-underline:after {
+      transform: scaleX(1);
+    }
+    .md-input:focus + .md-label,
+    .md-input:not(:placeholder-shown) + .md-label {
+      @apply md-label-focus;
+      color: #3182ce;
+      transform: translate(0, -65px) scale(0.75);
+      transform-origin: top left;
+    }
+    /* enable to leave border-bottom in modified color when the field is populated */
+
+    .md-input:not(:placeholder-shown) ~ .md-input-underline:after {
+      transform: scaleX(1);
+    }
+  </style>
+  <body>
+    <header
+      class="w-full h-[113px] bg-[#2B2B2B] flex justify-center items-center text-[#aaaaaa]"
+    >
+      <div
+        class="max-w-[1400px] w-full flex justify-between items-center p-8 px-8"
+      >
+        <a href="./index.html" class="flex gap-2 items-center">
+          <img src="../assets/icons/logo.svg" alt="" />
+          <div
+            class="text-white font-bold text-[16px] lg:text-[22px] font-mono"
+          >
+            Company Name
+          </div>
+        </a>
+        <a
+          href="./login.html"
+          class="rounded-full bg-[#B6747D] h-[46px] w-[167px] text-white flex items-center justify-center hover:opacity-80 font-sans"
+        >
+          Login
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div
+          class="w-full flex justify-center bg-[#3B3B3B] min-h-[900px] items-center"
+        >
+          <div
+            class="max-w-[1000px] w-full h-full grid grid-cols-6 lg:grid-cols-12 items-center bg-white rounded-lg"
+          >
+            <div class="col-span-6 w-full h-full rounded-3xl hidden lg:flex">
+              <img src="../assets/images/respsbg.svg" class="rounded-lg" />
+            </div>
+            <div
+              class="col-span-12 lg:col-span-6 px-8 pt-10 flex flex-wrap justify-center items-center"
+            >
+              <div
+                class="col-span-12 w-full font-bold text-[25px] lg:text-[36px] grid text-center lg:text-start"
+                style="font-family: Manrope"
+              >
+                Forgot Password?
+              </div>
+              <div
+                class="w-full text-[15px] lg:text-[20px] text-[#2B2B2B] py-3 grid text-center lg:text-start"
+                style="font-family: Space Grotesk"
+              >
+                Enter the email you used to create your account so we can send
+                you instructions on how to reset your password.
+              </div>
+              <div
+                class="w-full text-[15px] lg:text-[20px] text-[#2B2B2B] py-3 grid text-center lg:text-start"
+              >
+                <div class="md-input-main">
+                  <div class="md-input-box">
+                    <input
+                      id="fullName"
+                      name="fullName"
+                      type="email"
+                      class="md-input"
+                      placeholder=" "
+                    />
+                    <label
+                      for="fullName"
+                      class="md-label"
+                      style="font-family: Space Grotesk"
+                      >Email Address</label
+                    >
+                    <div class="md-input-underline" />
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center pt-4">
+                <button
+                  type="button"
+                  class="rounded-full bg-[#B6747D] h-[46px] w-full sm:w-[325px] md:w-[325px] lg:w-[325px] text-white hover:opacity-80 text-[16px]"
+                  style="font-family: Work Sans"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full sm:h-[531px] md:h-[314px] lg:h-[314px] bg-[#2B2B2B] flex justify-center items-center text-[#aaaaaa]"
+    >
+      <div
+        class="max-w-[1400px] w-full flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between items-start p-4 px-8"
+      >
+        <div class="col-span-1 flex flex-wrap flex-col">
+          <div class="gap-2 items-center flex">
+            <img src="../assets/icons/logo.svg" alt="" />
+            <img src="../assets/images/nft.svg" alt="" />
+          </div>
+          <div class="text-[#858584] text-[16px] font-sans pt-4">
+            NFT marketplace UI created with Anima for Figma.
+          </div>
+          <div class="text-[#858584] text-[16px] font-sans pt-4">
+            Join our community.
+          </div>
+          <div class="gap-2 items-center flex pt-4">
+            <img src="../assets/icons/decord.svg" alt="" />
+            <img src="../assets/icons/youtube.svg" alt="" />
+            <img src="../assets/icons/twitter.svg" alt="" />
+            <img src="../assets/icons/instagram.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-span-1 flex-wrap flex-col hidden md:flex lg:flex">
+          <div class="text-[#FFFFFF] text-[20px] pt-4 leading-[24.6px]">
+            Site Map
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">Home</div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">About</div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">NFT</div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">Contact</div>
+        </div>
+        <div class="col-span-1 flex-wrap flex-col flex">
+          <div class="text-[#FFFFFF] text-[20px] pt-4 leading-[24.6px]">
+            Company
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/company1.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/company2.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/company3.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4"></div>
+        </div>
+        <div class="col-span-1 flex-wrap flex-col flex">
+          <div class="text-[#FFFFFF] text-[20px] pt-4 leading-[24.6px]">
+            Resource
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/partner.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/blog.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/Newsletter.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

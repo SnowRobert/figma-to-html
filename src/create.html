@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="w-full h-[113px] bg-[#2B2B2B] flex justify-center items-center text-[#aaaaaa]"
+    >
+      <div
+        class="max-w-[1400px] w-full flex flex-col md:flex-row lg:flex-row justify-between items-center p-8 px-8"
+      >
+        <a href="./index.html" class="flex gap-2 items-center">
+          <img src="../assets/icons/logo.svg" alt="" />
+          <div
+            class="text-white font-bold text-[16px] lg:text-[22px] font-mono"
+          >
+            Company Name
+          </div>
+        </a>
+        <div class="flex gap-10 items-center flex-row">
+          <a
+            href="./create.html"
+            class="text-white font-bold text-[18px] lg:text-[22px] opacity-80"
+            style="font-family: Space Mono"
+          >
+            Your Collection
+          </a>
+          <a
+            href="./collection.html"
+            class="text-white font-bold text-[18px] lg:text-[22px] opacity-80"
+            style="font-family: Space Mono"
+          >
+            Collect
+          </a>
+          <a
+            href="./vote.html"
+            class="text-white font-bold text-[18px] lg:text-[22px] opacity-80"
+            style="font-family: Space Mono"
+          >
+            Vote
+          </a>
+          <div class="flex items-center">
+            <img src="../assets/images/avatarnav.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="w-full flex flex-wrap justify-center bg-[#2B2B2B]">
+          <img src="../assets/images/creatbg.svg" class="w-full" />
+          <div
+            class="max-w-[1400px] w-full h-full grid grid-cols-6 lg:grid-cols-12 items-center px-8"
+          >
+            <img
+              src="../assets/images/avatar.svg"
+              class="border-[#2B2B2B] border-2 hidden md:flex lg:flex"
+            />
+            <div
+              class="col-span-12 w-full text-[22px] font-sans flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between items-center pt-8"
+            >
+              <div
+                class="w-full text-[40px] md:text-[45px] lg:text-[51px] font-mono text-white grid text-center sm:text-start md:text-start lg:text-start"
+                style="font-family: Work Sans"
+              >
+                Animakid
+              </div>
+              <button
+                type="button"
+                class="rounded-full border-[#B6747D] border-[2px] h-[60px] w-[145px] hover:bg-[#858584]"
+              >
+                <div class="flex justify-center items-center gab-4">
+                  <img src="../assets/icons/plus.svg" />
+                  <div class="text-[16px] font-sans text-white">Follow</div>
+                </div>
+              </button>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-6 w-full flex justify-start py-3"
+            >
+              <div class="flex flex-col w-full">
+                <div
+                  class="text-[#FFFFFF] text-[25px] lg:text-[28px] font-sans"
+                  style="font-family: Space Mono"
+                >
+                  250k+
+                </div>
+                <div
+                  class="text-[#FFFFFF] text-[20px] lg:text-[22px] font-sans"
+                  style="font-family: Work Sans"
+                >
+                  Volume
+                </div>
+              </div>
+              <div class="flex flex-col w-full">
+                <div
+                  class="text-[#FFFFFF] text-[25px] lg:text-[28px] font-sans"
+                  style="font-family: Space Mono"
+                >
+                  50k+
+                </div>
+                <div
+                  class="text-[#FFFFFF] text-[20px] lg:text-[22px] font-sans"
+                  style="font-family: Work Sans"
+                >
+                  NFTs Sold
+                </div>
+              </div>
+              <div class="flex flex-col w-full">
+                <div
+                  class="text-[#FFFFFF] text-[25px] lg:text-[28px] font-sans"
+                  style="font-family: Space Mono"
+                >
+                  3000+
+                </div>
+                <div
+                  class="text-[#FFFFFF] text-[20px] lg:text-[22px] font-sans"
+                  style="font-family: Work Sans"
+                >
+                  Followers
+                </div>
+              </div>
+              <!-- <div class="col-span-1 flex-1 min-w-[350px] h-[590px] relative"> -->
+              <div
+                class="col-span-1 h-full relative flex items-center invisible md:invisible lg:visible"
+              >
+                <img
+                  src="../assets/images/pic1.svg"
+                  class="absolute top-[20%] left-[10%] right-0 lg:right-[90%] w-[240px] h-[320px] z-30"
+                  alt=""
+                />
+                <img
+                  src="../assets/images/pic2.svg"
+                  class="absolute top-[20%] left-[30%] right-0 lg:right-[70%] w-[240px] h-[320px] z-20"
+                  alt=""
+                />
+                <img
+                  src="../assets/images/pic3.svg"
+                  class="absolute top-[30%] left-[45%] right-0 lg:right-[55%] w-[250px] h-[320px] z-10"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-span-6 hidden md:flex lg:flex"></div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-6 w-full flex flex-col justify-start pt-5 pb-3"
+            >
+              <div
+                class="text-[#858584] text-[20px] lg:text-[22px] font-sans"
+                style="font-family: Space Mono"
+              >
+                Bio
+              </div>
+              <div
+                class="text-[#FFFFFF] text-[20px] lg:text-[22px] font-sans"
+                style="font-family: Work Sans"
+              >
+                The internet's friendliest designer kid.
+              </div>
+            </div>
+            <div class="col-span-6 hidden md:flex lg:flex"></div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-6 w-full flex flex-col justify-start pt-5 pb-10"
+            >
+              <div
+                class="text-[#858584] text-[20px] lg:text-[22px] font-sans"
+                style="font-family: Space Mono"
+              >
+                Links
+              </div>
+              <div class="gap-2 items-center flex pt-4">
+                <img src="../assets/icons/global.svg" alt="" />
+                <img src="../assets/icons/decord.svg" alt="" />
+                <img src="../assets/icons/youtube.svg" alt="" />
+                <img src="../assets/icons/twitter.svg" alt="" />
+                <img src="../assets/icons/instagram.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-span-6 hidden md:flex lg:flex"></div>
+            <div
+              class="col-span-12 w-full h-[60px] flex justify-start pt-3 gap-3"
+            >
+              <a
+                href="#"
+                class="col-span-6 w-full text-center text-[#FFFFFF] text-[20px] lg:text-[22px] font-sans border-b-4 border-[#858584] flex justify-center gap-3 items-center"
+                style="font-family: Space Mono"
+              >
+                Created
+                <img src="../assets/icons/count.svg" />
+              </a>
+              <a
+                href="./collection.html"
+                class="col-span-6 w-full text-center text-[#FFFFFF] text-[20px] lg:text-[22px] font-sans flex justify-center gap-3 items-center"
+                style="font-family: Work Sans"
+              >
+                Collection
+                <img src="../assets/icons/count_b.svg" />
+              </a>
+              <!-- <div class="col-span-1 flex-1 min-w-[350px] h-[590px] relative"> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="w-full flex justify-center pb-10 px-8 bg-[#3B3B3B]">
+          <div
+            class="max-w-[1400px] w-full h-full grid grid-cols-1 lg:grid-cols-1 items-center"
+          >
+            <div
+              class="w-full h-full grid grid-cols-12 justify-between items-center gap-2 md:gap-4 lg:gap-8 pt-10"
+            >
+              <!-- <div class="col-span-2 grid grid-flow-row"> -->
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 flex justify-center"
+              >
+                <div class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B]">
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover1.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    Distant Galaxy
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar1.svg" />
+                    <div class="text-[16px] font-mono">MoonDancer</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 hidden sm:flex md:flex justify-center"
+              >
+                <div
+                  class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B] items-center"
+                >
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover2.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    Life On Edena
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar2.svg" />
+                    <div class="text-[16px] font-mono">NebulaKid</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 hidden md:flex lg:flex justify-center"
+              >
+                <div class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B]">
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover3.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    AstroFiction
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar3.svg" />
+                    <div class="text-[16px] font-mono">Spaceone</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full h-full grid grid-cols-12 justify-between items-center gap-2 md:gap-4 lg:gap-8 pt-10"
+            >
+              <!-- <div class="col-span-2 grid grid-flow-row"> -->
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 flex justify-center"
+              >
+                <div class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B]">
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover4.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    Distant Galaxy
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar1.svg" />
+                    <div class="text-[16px] font-mono">MoonDancer</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 hidden sm:flex md:flex justify-center"
+              >
+                <div
+                  class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B] items-center"
+                >
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover5.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    Life On Edena
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar2.svg" />
+                    <div class="text-[16px] font-mono">NebulaKid</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 hidden md:flex lg:flex justify-center"
+              >
+                <div class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B]">
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover6.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    AstroFiction
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar3.svg" />
+                    <div class="text-[16px] font-mono">Spaceone</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full h-full grid grid-cols-12 justify-between items-center gap-2 md:gap-4 lg:gap-8 pt-10"
+            >
+              <!-- <div class="col-span-2 grid grid-flow-row"> -->
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 flex justify-center"
+              >
+                <div class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B]">
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover7.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    Distant Galaxy
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar1.svg" />
+                    <div class="text-[16px] font-mono">MoonDancer</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 hidden sm:flex md:flex justify-center"
+              >
+                <div
+                  class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B] items-center"
+                >
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover8.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    Life On Edena
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar2.svg" />
+                    <div class="text-[16px] font-mono">NebulaKid</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 hidden md:flex lg:flex justify-center"
+              >
+                <div class="rounded-[20px] w-[330px] h-full bg-[#2B2B2B]">
+                  <div class="overflow-hidden relative">
+                    <img src="../assets/images/discover9.svg" class="w-full" />
+                  </div>
+                  <div class="text-[#FFFFFF] text-[22px] font-sans px-8 py-5">
+                    AstroFiction
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] text-[22px] px-8 gap-2 flex items-center pb-10"
+                  >
+                    <img src="../assets/icons/avatar3.svg" />
+                    <div class="text-[16px] font-mono">Spaceone</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-full sm:h-[531px] md:h-[314px] lg:h-[314px] bg-[#2B2B2B] flex justify-center items-center text-[#aaaaaa]"
+    >
+      <div
+        class="max-w-[1400px] w-full flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between items-start p-4 px-8"
+      >
+        <div class="col-span-1 flex flex-wrap flex-col">
+          <div class="gap-2 items-center flex">
+            <img src="../assets/icons/logo.svg" alt="" />
+            <img src="../assets/images/nft.svg" alt="" />
+          </div>
+          <div class="text-[#858584] text-[16px] font-sans pt-4">
+            NFT marketplace UI created with Anima for Figma.
+          </div>
+          <div class="text-[#858584] text-[16px] font-sans pt-4">
+            Join our community.
+          </div>
+          <div class="gap-2 items-center flex pt-4">
+            <img src="../assets/icons/decord.svg" alt="" />
+            <img src="../assets/icons/youtube.svg" alt="" />
+            <img src="../assets/icons/twitter.svg" alt="" />
+            <img src="../assets/icons/instagram.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-span-1 flex-wrap flex-col hidden md:flex lg:flex">
+          <div class="text-[#FFFFFF] text-[20px] pt-4 leading-[24.6px]">
+            Site Map
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">Home</div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">About</div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">NFT</div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4">Contact</div>
+        </div>
+        <div class="col-span-1 flex-wrap flex-col flex">
+          <div class="text-[#FFFFFF] text-[20px] pt-4 leading-[24.6px]">
+            Company
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/company1.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/company2.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/company3.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4"></div>
+        </div>
+        <div class="col-span-1 flex-wrap flex-col flex">
+          <div class="text-[#FFFFFF] text-[20px] pt-4 leading-[24.6px]">
+            Resource
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/partner.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/blog.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-5">
+            <img src="../assets/icons/Newsletter.svg" />
+          </div>
+          <div class="text-[#FFFFFF] text-[16px] font-sans pt-4"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
